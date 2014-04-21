@@ -2,11 +2,6 @@
 Title: css file to tie the Clean Technologies CSS and WSU Spine themes together; specifically targeting the WNPA theme
 **/
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,700italic,400,600,700);
-@import url(http://fonts.googleapis.com/css?family=Oswald:400,300,700);
-@font-face {
-	font-family: "Awesome";
-	src: url('../fonts/fontawesome-webfont.eot') format('eot'), url('../fonts/fontawesome-webfont.ttf') format("truetype");
-	}
 * {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
@@ -22,18 +17,30 @@ Title: css file to tie the Clean Technologies CSS and WSU Spine themes together;
 .home .article-title {
 	display:none;
 }
+.home .two {
+	width:50% !important;
+}
+.home .one {
+	width:50% !important;
+}
+@media all and (max-width : 750px) {
+	.home .two {
+		width:100% !important;
+		}
+		.home .one {
+	width:100% !important;
+}
+}
 .article-title {
-	font-family: 'Oswald', sans-serif;
+	font-family: 'open sans', lucida sans, sans serif;
 	color: black;
 	font-weight: 300;
-	font-size: 4em;
+	font-size: 3em;
 	margin-bottom:10px;
 	text-transform: uppercase;
 }
 .page-id-56 .article-title {
 	padding:20px;
-}
-.home .one {
 }
 .home .one article{
 	margin:0;
@@ -45,14 +52,14 @@ Title: css file to tie the Clean Technologies CSS and WSU Spine themes together;
 	padding:2em;
 }
 .home .article-title-colmn-two {
-	font-size: 4em;
-	font-family: 'Oswald', sans-serif;
+	font-size: 3em;
+	font-family: 'open sans', lucida sans, sans serif;
 	font-weight: 300;
 	text-transform: uppercase;
 	color:black;
 }
 main > h1, h2, h3, h4 {
-	font-family: 'Oswald', sans-serif;
+	font-family: 'open sans', lucida sans, sans serif;
 }
 main article > h2 {
 	color:black;
@@ -206,14 +213,14 @@ main .two > aside ul li ul li:last-child {
 .tile a h3 {
 	color:white;
 	font-size: 2em;
-	font-family: 'Oswald', sans-serif;
+	font-family: 'open sans', lucida sans, sans serif;
 	font-weight: 400;
 	text-transform: uppercase;
 	}
 .tile a h4 {
 	color:white;
 	font-size: 1.4em;
-	font-family: 'Oswald', sans-serif;
+	font-family: 'open sans', lucida sans, sans serif;
 	height: 0px;
 	line-height: 1.25em;
 	font-weight: 300;
