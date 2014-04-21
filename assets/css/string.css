@@ -34,8 +34,8 @@ Title: css file to tie the Clean Technologies CSS and WSU Spine themes together;
 .article-title {
 	font-family: 'open sans', lucida sans, sans serif;
 	color: black;
-	font-weight: 300;
-	font-size: 3em;
+	font-weight: 600;
+	font-size: 2.8em;
 	margin-bottom:10px;
 	text-transform: uppercase;
 }
@@ -52,9 +52,9 @@ Title: css file to tie the Clean Technologies CSS and WSU Spine themes together;
 	padding:2em;
 }
 .home .article-title-colmn-two {
-	font-size: 3em;
+	font-size: 2.8em;
 	font-family: 'open sans', lucida sans, sans serif;
-	font-weight: 300;
+	font-weight: 600;
 	text-transform: uppercase;
 	color:black;
 }
@@ -214,7 +214,7 @@ main .two > aside ul li ul li:last-child {
 	color:white;
 	font-size: 2em;
 	font-family: 'open sans', lucida sans, sans serif;
-	font-weight: 400;
+	font-weight: 700;
 	text-transform: uppercase;
 	}
 .tile a h4 {
@@ -223,7 +223,7 @@ main .two > aside ul li ul li:last-child {
 	font-family: 'open sans', lucida sans, sans serif;
 	height: 0px;
 	line-height: 1.25em;
-	font-weight: 300;
+	font-weight: 600;
 	overflow: hidden;
 	padding-bottom: 2px;
 	-webkit-transition:height 0.3s;
