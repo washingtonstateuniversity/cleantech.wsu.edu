@@ -28,11 +28,11 @@ class wsu_cleantech_home {
 		// Build the output to return for use by the shortcode.
 		ob_start();
 		?>
-<aside class="tile" style="background: url('/wp-content/themes/cleantech/assets/img/LabBuilding.jpg'); background-size: cover; width: 100%;"><a href="/home-page/clean-technology-laboratory-building/"><header>
+<aside class="tile" style="background: url('<?php echo esc_url( get_stylesheet_directory_uri() . '/assets/img/LabBuilding.jpg' ); ?>'); background-size: cover; width: 100%;"><a href="/home-page/clean-technology-laboratory-building/"><header>
 <h3 class="title">Clean Technology Laboratory Building</h3>
 <h4>Fostering the synergy needed to drive innovation</h4>
 </header></a></aside>
-<aside class="tile" style="background: url('/wp-content/themes/cleantech/assets/img/renewable.jpg'); background-size:cover;">
+<aside class="tile" style="background: url('<?php echo esc_url( get_stylesheet_directory_uri() . '/assets/img/renewable.jpg' ); ?>'); background-size:cover;">
 	<a href="/home-page/renewable-biofuels-and-bioproducts/">
 	<header>
 		<h3 class="title">Renewable Biofuels and Bioproducts</h3>
@@ -40,7 +40,7 @@ class wsu_cleantech_home {
 	</header>
 	</a>
 </aside>
-<aside class="tile" style="background: url('/wp-content/themes/cleantech/assets/img/sustainable.jpg'); background-size:cover;">
+<aside class="tile" style="background: url('<?php echo esc_url( get_stylesheet_directory_uri() . '/assets/img/sustainable.jpg' ); ?>'); background-size:cover;">
 	<a href="/home-page/sustainable-design/">
 	<header>
 		<h3 class="title">Sustainable Design</h3>
@@ -48,7 +48,7 @@ class wsu_cleantech_home {
 	</header>
 	</a>
 </aside>
-<aside class="tile" style="background: url('/wp-content/themes/cleantech/assets/img/smart.jpg'); background-size:cover;">
+<aside class="tile" style="background: url('<?php echo esc_url( get_stylesheet_directory_uri() . '/assets/img/smart.jpg' ); ?>'); background-size:cover;">
 	<a href="/home-page/smart-grid/">
 	<header>
 		<h3 class="title">Smart Grid</h3>
@@ -56,7 +56,7 @@ class wsu_cleantech_home {
 	</header>
 	</a>
 </aside>
-<aside class="tile" style="background: url('/wp-content/themes/cleantech/assets/img/advanced.jpg'); background-size:cover;">
+<aside class="tile" style="background: url('<?php echo esc_url( get_stylesheet_directory_uri() . '/assets/img/advanced.jpg' ); ?>'); background-size:cover;">
 	<a href="/home-page/advance-materials/">
 	<header>
 		<h3 class="title">Advanced Materials</h3>
@@ -64,14 +64,14 @@ class wsu_cleantech_home {
 	</header>
 	</a>
 </aside>
-<aside class="tile" style="background: url('/wp-content/themes/cleantech/assets/img/farming.jpg'); background-size:cover;">
+<aside class="tile" style="background: url('<?php echo esc_url( get_stylesheet_directory_uri() . '/assets/img/farming.jpg' ); ?>'); background-size:cover;">
 	<a href="/home-page/precision-agriculture/">
 	<header>
 		<h3 class="title">Precision Agriculture</h3>
 		<h4>Reducing environmental impact</h4>
 	</header>
 	</a>
-</aside><aside class="tile" style="background: url('/wp-content/themes/cleantech/assets/img/environmental.jpg'); background-size:cover;">
+</aside><aside class="tile" style="background: url('<?php echo esc_url( get_stylesheet_directory_uri() . '/assets/img/environmental.jpg' ); ?>'); background-size:cover;">
 	<a href="/home-page/air-and-water/">
 	<header>
 		<h3 class="title">Air and Water</h3>
