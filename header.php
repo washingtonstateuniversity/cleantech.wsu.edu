@@ -42,9 +42,6 @@
 	<!-- DOCS -->
 	<link type="text/plain" rel="author" href="//repo.wsu.edu/spine/1/authors.txt" />
 	<link type="text/html" rel="help" href="http://brand.wsu.edu/media/web" />
-
-	<!-- Add scripts moved from scripts.js -->
-	<script src="<?php echo esc_url( get_stylesheet_directory_uri() . '/assets/js/scripts.js' ); ?>" type="text/javascript"></script>
 	
 	<!-- ANALYTICS -->
 	<!-- Your analytics code here -->
