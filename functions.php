@@ -2,7 +2,6 @@
 
 // Global version tracker.
 
-
 include_once( 'includes/wsu-cleantech-home.php' ); // Include shortcode plugin.
 
 add_action( 'wp_enqueue_scripts', 'cleantech_enqueue_scripts' );

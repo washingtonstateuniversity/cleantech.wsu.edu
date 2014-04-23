@@ -17,14 +17,14 @@
 	</div><!--/column-->
 	
 	<div class="column two">
-		
+		<aside>
+				<figure><?php the_post_thumbnail(); ?></figure>
 		<?php 
 		$column = get_post_meta( get_the_ID(), 'column-two', true );
 		if( ! empty( $column ) ) { echo $column; }
 		?>
-		
+		</aside>	
 	</div>
-
 </section>
 <?php endwhile; endif; ?>
 </main>

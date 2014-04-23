@@ -28,6 +28,7 @@ class wsu_cleantech_home {
 		// Build the output to return for use by the shortcode.
 		ob_start();
 		?>
+<nav>
 <aside class="tile" style="background: url('<?php echo esc_url( get_stylesheet_directory_uri() . '/assets/img/LabBuilding.jpg' ); ?>'); background-size: cover; width: 100%;"><a href="/home-page/clean-technology-laboratory-building/"><header>
 <h3 class="title">Clean Technology Laboratory Building</h3>
 <h4>Fostering the synergy needed to drive innovation</h4>
@@ -79,6 +80,7 @@ class wsu_cleantech_home {
 	</header>
 	</a>
 </aside>
+</nav>
 		<?php
 		$content = ob_get_contents();
 		ob_end_clean();

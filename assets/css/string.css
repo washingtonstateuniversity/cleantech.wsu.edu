@@ -1,7 +1,6 @@
 /**
 Title: css file to tie the Clean Technologies CSS and WSU Spine themes together; specifically targeting the WNPA theme
 **/
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,700italic,400,600,700);
 * {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
@@ -11,52 +10,64 @@ Title: css file to tie the Clean Technologies CSS and WSU Spine themes together;
  	height:5px;
  	width:100%;
  }
+.spine-cleantech-home .wide {
+	width:100%;
+}
+.spine-cleantech-home .halves .gain {
+	margin:0;
+	padding:0;
+	width:600px;
+}
+.spine-cleantech-home .halves .lose {
+	width:390px;
+}
 .main-header {
 	display:none;
 }
-.home .article-title {
-	display:none;
+/** Video **/
+.videoWrapper > iframe, embed {
+	max-width:100%;
+	height:auto;
 }
-.home .two {
-	width:50% !important;
+.vd-xlg > iframe, embed {
+	width:1080px;
+	min-height:608px !important;
 }
-.home .one {
-	width:50% !important;
+.vd-lg > iframe, embed {
+	width:720px;
+	min-height:405px !important;
 }
-@media all and (max-width : 750px) {
-	.home .two {
-		width:100% !important;
-		}
-		.home .one {
-	width:100% !important;
+.vd-md-lg-spine > iframe, embed {
+	width:528px;
+	min-height:297px !important;
 }
+.vd-md > iframe, embed {
+	width:480px;
+	min-height:270px !important;
+}
+.vd-md-sm > iframe, embed {
+	width:360px;
+	min-height:203px !important;
+}
+.vd-sm > iframe, embed {
+	width:240px;
+	min-height:135px !important;
+}
+.vd-xsm > iframe, embed {
+	width:144px;
+	min-height:81px !important;
+}
+.vd-respond > iframe, embed {
+	width:100%;
+	height:auto;
 }
 .article-title {
 	font-family: 'open sans', lucida sans, sans serif;
 	color: black;
 	font-weight: 600;
-	font-size: 2.8em;
+	font-size: 2.6em;
 	margin-bottom:10px;
 	text-transform: uppercase;
-}
-.page-id-56 .article-title {
-	padding:20px;
-}
-.home .one article{
-	margin:0;
-	padding:0;
-	}
-.home .two {
-}
-.home .two section {
-	padding:2em;
-}
-.home .article-title-colmn-two {
-	font-size: 2.8em;
-	font-family: 'open sans', lucida sans, sans serif;
-	font-weight: 600;
-	text-transform: uppercase;
-	color:black;
 }
 main > h1, h2, h3, h4 {
 	font-family: 'open sans', lucida sans, sans serif;
@@ -76,7 +87,7 @@ main article > h3 {
 main article > h3 a {
 	font-weight: 300;
 }
-article, section > p {
+article > p {
 	color:#757575;
 	line-height: 1.65em;
 	font-size: 100%;
@@ -85,11 +96,10 @@ article, section > p {
 }
 main .two > aside {
 	padding:0;
-	margin-top:190px;
+	margin-top:140px;
 	width:100%;
 }
 main .two > aside img {
-	width:100%;
 	margin-bottom:20px;
 }
 main .two > aside h2, h3, h4 {
@@ -103,51 +113,17 @@ main .two > aside ul li ul {
 	padding-top:2px;
 	padding-left:1.4em;
 }
-main .two > aside ul li ul li {
+main .two > ul li ul li {
 	border-top: none;
 	font-size: 85%;
 	padding-bottom:5px;
 	border-bottom: solid 1px #d8d8d8;
 }
-main .two > aside ul li ul li:last-child {
+main .two > section aside ul li ul li:last-child {
 	border-bottom:none;
 }
 /* Moved over from clean.css */
-
-/* ----------------------------------- */
-/* ----- MAIN <<<---------- */
-/* ----------------------------------- */
-#date {
-	background-color: #FFFFFF;
-	padding: 5px;
-	width: 40px;
-	margin-right: 10px;
-	margin-bottom: 10px;
-	margin-left: 10px;
-	float: left;
-	text-align: center;
-	margin-top: 0px;
-	border: 1px dotted #888f97;
-}
-#date h1 {
-	font-size: x-large;
-	font-weight: bold;
-	padding: 0px;
-	margin: 0px;
-	color: #26bcd7;
-}
-#date h2 {
-	font-size: medium;
-	padding: 0px;
-	margin: 0px;
-	color: #b7bcc0;
-}
-#date h3 {
-	font-size: small;
-	margin: 0px;
-	padding: 0px;
-	color: #b7bcc0;
-}
+/* Target homepage nav */
 .tile {
 	width: 50%;
 	height: 300px;
@@ -201,6 +177,7 @@ main .two > aside ul li ul li:last-child {
 	
 	}
 .tile a header {
+	font-family: 'open sans', lucida sans, sans serif;
 	color: white;
 	margin: 150px 20px 0px 20px;
 	text-shadow: 2px 2px 2px rgba(0,0,0,0.9);
@@ -212,15 +189,13 @@ main .two > aside ul li ul li:last-child {
 	}
 .tile a h3 {
 	color:white;
-	font-size: 2em;
-	font-family: 'open sans', lucida sans, sans serif;
+	font-size: 1.5em;
 	font-weight: 700;
 	text-transform: uppercase;
 	}
 .tile a h4 {
 	color:white;
-	font-size: 1.4em;
-	font-family: 'open sans', lucida sans, sans serif;
+	font-size: 1.2em;
 	height: 0px;
 	line-height: 1.25em;
 	font-weight: 600;
@@ -243,4 +218,73 @@ main .two > aside ul li ul li:last-child {
 	border-right:2px solid #fff;
 	}
 
-/* */
+/* Respond queries */
+@media (max-width: 1188px) and (min-width: 990px){
+	.spine-cleantech-home .halves .gain {
+		max-width:50%;
+	}
+	.spine-cleantech-home .halves .lose {
+		min-width:30%;
+	}
+}
+@media (max-width: 989px), only screen and (max-device-width: 1024px) and (orientation: portrait) {
+	#binder, .spine-cleantech-home {
+		width:100%;
+		margin:0;
+	}
+	#binder .spine-cleantech-home .halves .gain {
+		width:100%;
+	}
+	#binder .spine-cleantech-home .halves .lose {
+		width:100%;
+	}
+	#binder .spine-cleantech-home .halves .lose {
+		width:100%;
+	}
+	#binder, .spine-cleantech-home .tile {
+		border:none;
+	}
+	#binder .spine-cleantech-home .tile a h3 {
+		padding-bottom:10px;
+		border-bottom: 1px solid #fff;
+	}
+	#binder .spine-cleantech-home .tile a h4 {
+		height:120px;
+	}
+	.videoWrapper > iframe, embed {
+		max-width:720px;
+		min-height:405px !important;
+	}
+}
+@media (max-width: 720px) and (min-width: 480px){
+	/** Video **/
+	.videoWrapper > iframe, embed {
+		max-width:720px;
+		min-height:405px !important;
+	}
+}
+@media (max-width: 480px) and (min-width:360px) {
+	.videoWrapper > iframe, embed {
+		max-width:480px ;
+		min-height:270px !important;
+	}
+}
+@media (max-width: 360px) and (min-width:240px) {
+	.videoWrapper > iframe, embed {
+		max-width:360px ;
+		min-height:203px;
+	}
+}
+@media (max-width: 240px) and (min-width:144px) {
+	.videoWrapper > iframe, embed {
+		max-width:240px ;
+		min-height:135px;
+	}
+}
+@media (max-width: 144px) {
+	.videoWrapper > iframe, embed {
+		max-width:144px ;
+		min-height:81px;
+	}
+}
+/**/
