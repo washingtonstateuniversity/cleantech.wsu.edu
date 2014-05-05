@@ -18,7 +18,7 @@
 	
 	<div class="column two">
 		<aside>
-				<figure><?php the_post_thumbnail(); ?></figure>
+				<figure><?php the_post_thumbnail(array(270,270)); ?></figure>
 		<?php 
 		$column = get_post_meta( get_the_ID(), 'column-two', true );
 		if( ! empty( $column ) ) { echo $column; }

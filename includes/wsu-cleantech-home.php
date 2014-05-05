@@ -72,7 +72,7 @@ class wsu_cleantech_home {
 		<h4>Reducing environmental impact</h4>
 	</header>
 	</a>
-</aside><aside class="tile" style="background: url('<?php echo esc_url( get_stylesheet_directory_uri() . '/assets/img/environmental.jpg' ); ?>'); background-size:cover;">
+</aside><aside class="tile" style="background: url('<?php echo esc_url( get_stylesheet_directory_uri() . '/assets/img/wave.jpg' ); ?>'); background-size:cover;">
 	<a href="/home-page/air-and-water/">
 	<header>
 		<h3 class="title">Air and Water</h3>
