@@ -305,5 +305,9 @@ main .two > section aside ul li ul li:last-child {
 		box-sizing:border-box;
 		overflow: hidden;
 	}
+	main .two > aside figure img {
+		width:100% !important;
+		height:auto;
+	}
 }
 /**/
