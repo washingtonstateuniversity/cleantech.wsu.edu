@@ -309,5 +309,13 @@ main .two > section aside ul li ul li:last-child {
 		width:100% !important;
 		height:auto;
 	}
+	main .two > aside ul {
+		padding-left:2em;
+		padding-right:2em;
+	}
+	main .two > aside h3 {
+		padding-left:1.3em;
+		padding-right:1.3em;
+	}
 }
 /**/
