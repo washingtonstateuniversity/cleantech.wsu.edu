@@ -8,7 +8,7 @@
 
 			<?php get_template_part('parts/headers'); ?>
 
-			<section class="row sidebar">
+			<section class="row sidebar side-right">
 
 				<div class="column one">
 
