@@ -1,4 +1,4 @@
-<?php /* Template Name: Sideright */ ?>
+<?php /* Template Name: CleanTech Sideright */ ?>
 
 <?php get_header(); ?>
 
