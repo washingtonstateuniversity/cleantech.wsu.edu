@@ -73,7 +73,7 @@ main {
 	color:#464e54;
 }
 main > h1, h2, h3, h4, .article-title {
-	font-family: 'OpenSans-Condensed';
+	font-family: 'OpenSans';
 }
 main article > h2 {
 	font-size:2.2em;
