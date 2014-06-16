@@ -30,7 +30,7 @@ class wsu_cleantech_home {
 		?>
 <nav>
 <aside class="tile" style="background: url('<?php echo esc_url( get_stylesheet_directory_uri() . '/assets/img/LabBuilding.jpg' ); ?>'); background-size: cover; width: 100%;"><a href="/home-page/clean-technology-laboratory-building/"><header>
-<h3 class="title">Clean Technology Laboratory Building</h3>
+<h3 class="title">Paccar Environmental Technology Building</h3>
 <h4>Fostering the synergy needed to drive innovation</h4>
 </header></a></aside>
 <aside class="tile" style="background: url('<?php echo esc_url( get_stylesheet_directory_uri() . '/assets/img/renewable.jpg' ); ?>'); background-size:cover;">
