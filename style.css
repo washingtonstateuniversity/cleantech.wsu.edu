@@ -10,70 +10,61 @@ License: Copyright Washington State University
 License URI: http://copyright.wsu.edu
 Tags: light
 */
+	
+/* ***********************************************************************
+**************************************************************************
+ ____    __    ____   _______. __    __ 
+ \   \  /  \  /   /  /       ||  |  |  |
+  \   \/    \/   /  |   (----`|  |  |  |
+   \            /    \   \    |  |  |  |
+    \    /\    / .----)   |   |  `--'  |
+     \__/  \__/  |_______/     \______/ 
+                                       
+   ("\''/").___..--''"`-._  
+    `9_ 9  )   `-.  (     ).`-.__.`) 
+    (_Y_.)'  ._   )  `._ `. ``-..-' 
+  _..`--'_..-_/  /--'_.' .'          
+(il).-''  ((i).'  ((!.-'
 
-/**
-Title: css file to tie the Clean Technologies CSS and WSU Spine themes together; specifically targeting the WNPA theme
-**/
+	
+	# Table of contents
+		## Parent DOM alterations
+		## Parent Spine alterations 
+		## Define Typography 
+		## Standard HTML elements
+			### Headers
+		## Helper elements structure
+		## Metro navigation
+		## Page specific targeting - Line
+			### Homepage / - Line
+		## Video
+		## Media devices
+
+**************************************************************************
+*********************************************************************** */
+
+/* ***********************************************************************
+**************************************************************************
+
+## Parent DOM alterations
+
+**************************************************************************
+*********************************************************************** */
 * {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
-.redTrim {
-	background-color:#981e32;
-	height:5px;
-	width:100%;
+main {
+	color:#464e54;
 }
-.spine-cleantech-home .wide {
-	width:100%;
-}
-.spine-cleantech-home .halves .gain {
-	margin:0;
-	padding:0;
-	width:600px;
-}
-.spine-cleantech-home .halves .lose {
-	width:390px;
-}
-.main-header {
-	display:none;
-}
-/** Video **/
-.videoWrapper iframe, .videoWrapper embed {
-	max-width:100%;
-	height:auto;
-}
-.vd-xlg iframe, .vd-xlg  embed {
-	width:1080px;
-	min-height:608px !important;
-}
-.vd-lg iframe, .vd-lg embed {
-	width:720px;
-	min-height:405px !important;
-}
-.vd-md-lg-spine iframe, .vd-md-lg-spine  embed {
-	width:528px;
-	min-height:297px !important;
-}
-.vd-md iframe, .vd-md  embed {
-	width:480px;
-	min-height:270px !important;
-}
-.vd-md-sm iframe, .vd-md-sm embed {
-	width:360px;
-	min-height:203px !important;
-}
-.vd-sm iframe, .vd-sm embed {
-	width:240px;
-	min-height:135px !important;
-}
-.vd-xsm iframe, .vd-xsm embed {
-	width:144px;
-	min-height:81px !important;
-}
-.vd-respond iframe, .vd-respond embed {
-	width:100%;
-	height:auto;
-}
+
+/* ***********************************************************************
+**************************************************************************
+
+## Parent Spine alterations
+
+**************************************************************************
+*********************************************************************** */
 .article-title {
 	color: black;
 	font-weight: 400;
@@ -82,12 +73,41 @@ Title: css file to tie the Clean Technologies CSS and WSU Spine themes together;
 	letter-spacing: 0;
 	text-transform: uppercase;
 }
-main {
-	color:#464e54;
+.main-header {
+	display:none;
 }
+/* Before binder Accent parts/before-binder.php */
+.redTrim {
+	background-color:#981e32;
+	height:5px;
+	width:100%;
+}
+.spine-blank-template .article-title {
+	margin-top:30px;
+	margin-left:30px;
+}
+
+/* ***********************************************************************
+**************************************************************************
+
+## Define Typography
+
+**************************************************************************
+*********************************************************************** */
 main > h1, h2, h3, h4, .article-title {
 	font-family: 'OpenSans';
 }
+
+/* ***********************************************************************
+**************************************************************************
+
+## Standard HTML elements
+
+**************************************************************************
+*********************************************************************** */
+
+/* ### Headers
+*********************************************************************** */
 main article > h2 {
 	font-size:2.2em;
 	color:black;
@@ -104,12 +124,23 @@ main article > h3 {
 main article > h3 a {
 	font-weight: 300;
 }
+
+/* ### Paragraph
+*********************************************************************** */
 article > p {
 	line-height: 1.65em;
 	font-size: 100%;
 	vertical-align: baseline;
 	margin-bottom:1.5em;
 }
+
+/* ***********************************************************************
+**************************************************************************
+
+## Helper elements structure
+
+**************************************************************************
+*********************************************************************** */
 main .two > aside {
 	padding:0;
 	margin-top:140px;
@@ -138,12 +169,14 @@ main .two > ul li ul li {
 main .two > section aside ul li ul li:last-child {
 	border-bottom:none;
 }
-.spine-blank-template .article-title {
-	margin-top:30px;
-	margin-left:30px;
-}
-/* Moved over from clean.css */
-/* Target homepage nav */
+
+/* ***********************************************************************
+**************************************************************************
+
+## Metro navigation
+
+**************************************************************************
+*********************************************************************** */
 .tile {
 	width: 50%;
 	height: 300px;
@@ -236,7 +269,79 @@ main .two > section aside ul li ul li:last-child {
 	border-right:2px solid #fff;
 }
 
-/* Respond queries */
+/* ***********************************************************************
+**************************************************************************
+
+## Page specific targeting
+
+**************************************************************************
+*********************************************************************** */
+
+/* ### Homepage /
+*********************************************************************** */
+.spine-cleantech-home .wide {
+	width:100%;
+}
+.spine-cleantech-home .halves .gain {
+	margin:0;
+	padding:0;
+	width:600px;
+}
+.spine-cleantech-home .halves .lose {
+	width:390px;
+}
+
+/* ***********************************************************************
+**************************************************************************
+
+## Video
+
+**************************************************************************
+*********************************************************************** */
+.videoWrapper iframe, .videoWrapper embed {
+	max-width:100%;
+	height:auto;
+}
+.vd-xlg iframe, .vd-xlg  embed {
+	width:1080px;
+	min-height:608px !important;
+}
+.vd-lg iframe, .vd-lg embed {
+	width:720px;
+	min-height:405px !important;
+}
+.vd-md-lg-spine iframe, .vd-md-lg-spine  embed {
+	width:528px;
+	min-height:297px !important;
+}
+.vd-md iframe, .vd-md  embed {
+	width:480px;
+	min-height:270px !important;
+}
+.vd-md-sm iframe, .vd-md-sm embed {
+	width:360px;
+	min-height:203px !important;
+}
+.vd-sm iframe, .vd-sm embed {
+	width:240px;
+	min-height:135px !important;
+}
+.vd-xsm iframe, .vd-xsm embed {
+	width:144px;
+	min-height:81px !important;
+}
+.vd-respond iframe, .vd-respond embed {
+	width:100%;
+	height:auto;
+}
+
+/* ***********************************************************************
+**************************************************************************
+
+## Helper elements structure
+
+**************************************************************************
+*********************************************************************** */
 @media (max-width: 1188px) and (min-width: 990px){
 	.spine-cleantech-home .halves .gain {
 		max-width:50%;
@@ -274,7 +379,6 @@ main .two > section aside ul li ul li:last-child {
 	}
 }
 @media (max-width: 720px) and (min-width: 480px){
-	/** Video **/
 	.videoWrapper iframe, .videoWrapper embed {
 		max-width:720px;
 		min-height:405px !important;
@@ -310,7 +414,6 @@ main .two > section aside ul li ul li:last-child {
 		height: 250px;
 		display: block;
 		float: left;
-		/*margin-bottom: 2px;*/
 		border-bottom: 2px solid #fff;
 		position: relative;
 		-moz-box-sizing:border-box;
@@ -330,4 +433,3 @@ main .two > section aside ul li ul li:last-child {
 		padding-right:1.3em;
 	}
 }
-/**/
