@@ -6,13 +6,7 @@
 
 <section class="row sidebar side-right gutter marginalize-ends">
 
-	<div class="column one">
-		<header class="article-header">
-			<div class="article-title">
-			<h1>Going up!</h1>
-		</div>
-	</header>
-			<p>The PACCAR Environmental Technology Building will not only serve as a hub for multiple interdisciplinary science and engineering programs, it will also be an example of the progress science has made toward sustainable and efficient technology. The PACCAR building is expected to reach LEED gold certification and will include multiple systems to reduce its environmental impact, everything from permeable pavement to wood composite materials. Learn more about the building, the science behind it, and what sustainability means to WSU here in Going up! </p>
+	
 		
 		<?php while ( have_posts() ) : the_post(); ?>
 				
