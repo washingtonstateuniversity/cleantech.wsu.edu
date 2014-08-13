@@ -7,7 +7,7 @@
 <?php get_template_part('parts/headers'); ?> 
 
 <section class="row sidebar side-right gutter marginalize-ends">
-<img src="/wp-content/uploads/sites/22/2014/08/LabBuilding.jpg" alt="Paccard Lab Building" width="600" height="300">
+<img src="/wp-content/uploads/sites/22/2014/08/LabBuilding.jpg" alt="Paccard Lab Building" width="520" height="260">
 	<div class="column one">
 	
 		<?php while ( have_posts() ) : the_post(); ?>
