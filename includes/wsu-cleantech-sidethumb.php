@@ -9,14 +9,13 @@ Version: 0.1.3
 License: GPL version 2 or later - http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
 */
 
-class wsu_cleantech_thumb {
+class WSU_Cleantech_Thumbnails {
 
 	/**
 	 * Setup the hooks.
 	 */
 	public function __construct() {
-
-		add_shortcode( 'wsu_cleantech_thumb',    array( $this, 'wsu_cleantech_thumb_display' ) );
+		add_shortcode( 'wsu_cleantech_thumb', array( $this, 'wsu_cleantech_thumb_display' ) );
 	}
 
 	/**
@@ -28,7 +27,7 @@ class wsu_cleantech_thumb {
 		// Build the output to return for use by the shortcode.
 		ob_start();
 		?>
-<figure><?php the_post_thumbnail(array(270,270)); ?></figure>
+		<figure><?php the_post_thumbnail( array( 270, 270 ) ); ?></figure>
 		<?php
 		$content = ob_get_contents();
 		ob_end_clean();
@@ -36,4 +35,4 @@ class wsu_cleantech_thumb {
 		return $content;
 	}
 }
-new wsu_cleantech_thumb();
+new WSU_Cleantech_Thumbnails();
