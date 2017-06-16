@@ -14,14 +14,6 @@ function cleantech_enqueue_scripts() {
 	wp_enqueue_script( 'cleantech-script', get_stylesheet_directory_uri() . '/js/scripts.js', array( 'jquery' ), spine_get_script_version(), true );
 }
 
-add_action( 'spine_pre_jacket_html', 'cleantech_pre_jacket_html' );
-/**
- * Add a div before `jacket`.
- */
-function cleantech_pre_jacket_html() {
-	echo '<div class="redTrim"></div>';
-}
-
 add_filter( 'embed_oembed_html', 'alx_embed_html', 10, 3 );
 add_filter( 'video_embed_html', 'alx_embed_html' ); // Jetpack
 /**
