@@ -11,15 +11,14 @@ add_action( 'wp_enqueue_scripts', 'cleantech_enqueue_scripts' );
  */
 function cleantech_enqueue_scripts() {
 	// Script only contains document.ready calls, load in the footer.
-	wp_enqueue_script( 'cleantech-script', get_stylesheet_directory_uri() . '/assets/js/scripts.js', array( 'jquery' ), spine_get_script_version(), true );
+	wp_enqueue_script( 'cleantech-script', get_stylesheet_directory_uri() . '/js/scripts.js', array( 'jquery' ), spine_get_script_version(), true );
 }
 
-add_action( 'spine_pre_jacket_html', 'cleantech_pre_jacket_html' );
-function cleantech_pre_jacket_html() {
-	echo '<div class="redTrim"></div>';
-}
-function alx_embed_html( $html ) {
-    return '<div class="video-container">'.$html.'</div>';
-}
 add_filter( 'embed_oembed_html', 'alx_embed_html', 10, 3 );
 add_filter( 'video_embed_html', 'alx_embed_html' ); // Jetpack
+/**
+ * Filter the output of video embeds.
+ */
+function alx_embed_html( $html ) {
+	return '<div class="video-container">' . $html . '</div>';
+}
