@@ -35,12 +35,3 @@ function cleantech_enqueue_scripts() {
 		wp_enqueue_script( 'stick-and-go', get_stylesheet_directory_uri() . '/src/js/stick-and-go.js', array( 'jquery' ), wsu_cleantech_theme_version(), true );
 	}
 }
-
-add_filter( 'embed_oembed_html', 'alx_embed_html', 10, 3 );
-add_filter( 'video_embed_html', 'alx_embed_html' ); // Jetpack
-/**
- * Filter the output of video embeds.
- */
-function alx_embed_html( $html ) {
-	return '<div class="video-container">' . $html . '</div>';
-}
