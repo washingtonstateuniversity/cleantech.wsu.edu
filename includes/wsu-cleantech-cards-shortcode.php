@@ -1,6 +1,6 @@
 <?php
 
-class WSU_Clean_Tech_Cards_Shortcode {
+class WSU_Cleantech_Cards_Shortcode {
 
 	/**
 	 * Setup hooks to include.
@@ -8,7 +8,7 @@ class WSU_Clean_Tech_Cards_Shortcode {
 	 * @since 1.8.0
 	 */
 	public function __construct() {
-		add_shortcode( 'wsu_clean_tech_cards', array( $this, 'display_wsu_clean_tech_cards' ) );
+		add_shortcode( 'wsu_cleantech_cards', array( $this, 'display_wsu_cleantech_cards' ) );
 	}
 
 	/**
@@ -16,7 +16,7 @@ class WSU_Clean_Tech_Cards_Shortcode {
 	 *
 	 * @since 1.8.0
 	 */
-	public function display_wsu_clean_tech_cards( $atts ) {
+	public function display_wsu_cleantech_cards( $atts ) {
 		$defaults = array(
 			'count' => 10,
 			'site_category_slug' => '',
@@ -82,4 +82,4 @@ class WSU_Clean_Tech_Cards_Shortcode {
 		return $content;
 	}
 }
-new WSU_Clean_Tech_Cards_Shortcode();
+new WSU_Cleantech_Cards_Shortcode();
