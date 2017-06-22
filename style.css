@@ -8,35 +8,29 @@ Template: spine
 Version: 1.8.0
 */
 
-.content-card {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
+#jacket {
+	border-top: 5px solid #981e32;
 }
 
-.content-card--feature-image,
-.content-card--text {
-	box-sizing: border-box;
+#binder.fluid.max-1980 .row {
+	max-width: 792px;
 }
 
-@media screen and ( max-width: 989px ) {
 
-	.content-card {
-		display: block;
-	}
-
-	.content-card .content-card--feature-image,
-	.content-card .content-card--text {
-		width: 100%;
-	}
+.home #jacket {
+	border-top: none;
 }
 
-.main-feature-top {
-	height: calc(100vh - 60px);
-}
-
-main {
+.home main {
 	background: #fff;
+}
+
+.home .page {
+	border-left: 5px solid #f9f9f9;
+}
+
+.home #binder.fluid.max-1980 .row {
+	max-width: 1980px;
 }
 
 /* Hero */
@@ -188,6 +182,29 @@ article:nth-of-type(odd) .content-card--feature-image {
 
 	.content-card--text {
 		padding: 4em 4em 6em;
+	}
+}
+
+.content-card {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+}
+
+.content-card--feature-image,
+.content-card--text {
+	box-sizing: border-box;
+}
+
+@media screen and ( max-width: 989px ) {
+
+	.content-card {
+		display: block;
+	}
+
+	.content-card .content-card--feature-image,
+	.content-card .content-card--text {
+		width: 100%;
 	}
 }
 /*# sourceMappingURL=style.css.map */
