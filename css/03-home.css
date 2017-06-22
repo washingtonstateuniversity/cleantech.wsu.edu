@@ -1,40 +1,3 @@
-/*
-Theme Name: WSU Clean Technologies
-Theme URI: http://web.wsu.edu/spine
-Author: WSU University Communications
-Author URI: http://web.wsu.edu, http://ucomm.wsu.edu
-Description: The child theme for cleantech.wsu.edu.
-Template: spine
-Version: 0.6.0
-*/
-
-.content-card {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-}
-
-.content-card--feature-image,
-.content-card--text {
-	box-sizing: border-box;
-}
-
-@media screen and ( max-width: 989px ) {
-
-	.content-card {
-		display: block;
-	}
-
-	.content-card .content-card--feature-image,
-	.content-card .content-card--text {
-		width: 100%;
-	}
-}
-
-.main-feature-top {
-	height: calc(100vh - 60px);
-}
-
 main {
 	background: #fff;
 }
@@ -65,19 +28,10 @@ main {
 }
 
 .hero .hero--text {
-	-webkit-box-align: center;
-	    -ms-flex-align: center;
-	        align-items: center;
-	display: -webkit-box;
-	display: -ms-flexbox;
+	align-items: center;
 	display: flex;
-	-webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
-	    -ms-flex-direction: column;
-	        flex-direction: column;
-	-webkit-box-pack: center;
-	    -ms-flex-pack: center;
-	        justify-content: center;
+	flex-direction: column;
+	justify-content: center;
 	margin: 0 auto;
 	max-width: 1400px;
 	text-align: center;
@@ -130,9 +84,7 @@ main {
 }
 
 article:nth-of-type(odd) .content-card--feature-image {
-	-webkit-box-ordinal-group: 2;
-	    -ms-flex-order: 1;
-	        order: 1;
+	order: 1;
 }
 
 .content-card--feature-image {
@@ -190,4 +142,3 @@ article:nth-of-type(odd) .content-card--feature-image {
 		padding: 4em 4em 6em;
 	}
 }
-/*# sourceMappingURL=style.css.map */
