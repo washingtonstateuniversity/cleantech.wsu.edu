@@ -7,4 +7,31 @@ Description: The child theme for cleantech.wsu.edu.
 Template: spine
 Version: 0.6.0
 */
+
+.content-card {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+}
+
+.content-card--feature-image,
+.content-card--text {
+	box-sizing: border-box;
+}
+
+@media screen and ( max-width: 989px ) {
+
+	.content-card {
+		display: block;
+	}
+
+	.content-card .content-card--feature-image,
+	.content-card .content-card--text {
+		width: 100%;
+	}
+}
+
+.main-feature-top {
+	height: calc(100vh - 60px);
+}
 /*# sourceMappingURL=style.css.map */
