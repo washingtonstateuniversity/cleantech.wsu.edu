@@ -41,7 +41,7 @@ module.exports = function( grunt ) {
 
 		jscs: {
 			scripts: {
-				src: [ "Gruntfile.js", "js/*.js" ],
+				src: [ "Gruntfile.js", "js/*.js", "!js/*.min.js" ],
 				options: {
 					preset: "jquery",
 					requireCamelCaseOrUpperCaseIdentifiers: false, // We rely on name_name too much to change them all.
@@ -64,7 +64,7 @@ module.exports = function( grunt ) {
 				}
 			},
 			theme_scripts: {
-				src: [ "js/*.js" ],
+				src: [ "js/*.js", "!js/*.min.js" ],
 				options: {
 					bitwise: true,
 					curly: true,
@@ -78,6 +78,18 @@ module.exports = function( grunt ) {
 					unused: true,
 					browser: true, // Define globals exposed by modern browsers.
 					jquery: true   // Define globals exposed by jQuery.
+				}
+			}
+		},
+
+		uglify: {
+			dist: {
+				cwd: "src/js/",
+				src: "*.js",
+				dest: "js/",
+				expand: true,
+				rename: function( dst, src ) {
+					return dst + "/" + src.replace( ".js", ".min.js" );
 				}
 			}
 		},
@@ -118,6 +130,7 @@ module.exports = function( grunt ) {
 	grunt.loadNpmTasks( "grunt-contrib-concat" );
 	grunt.loadNpmTasks( "grunt-contrib-connect" );
 	grunt.loadNpmTasks( "grunt-contrib-jshint" );
+	grunt.loadNpmTasks( "grunt-contrib-uglify" );
 	grunt.loadNpmTasks( "grunt-contrib-watch" );
 	grunt.loadNpmTasks( "grunt-jscs" );
 	grunt.loadNpmTasks( "grunt-phpcs" );
@@ -125,7 +138,7 @@ module.exports = function( grunt ) {
 	grunt.loadNpmTasks( "grunt-stylelint" );
 
 	// Default task(s).
-	grunt.registerTask( "default", [ "jscs", "jshint", "stylelint", "concat", "postcss", "clean", "phpcs" ] );
+	grunt.registerTask( "default", [ "jscs", "jshint", "uglify", "stylelint", "concat", "postcss", "clean", "phpcs" ] );
 
 	grunt.registerTask( "serve", [ "connect", "watch" ] );
 };
