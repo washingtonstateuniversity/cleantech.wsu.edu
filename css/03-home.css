@@ -1,5 +1,17 @@
-main {
+.home #jacket {
+	border-top: none;
+}
+
+.home main {
 	background: #fff;
+}
+
+.home .page {
+	border-left: 5px solid #f9f9f9;
+}
+
+.home #binder.fluid.max-1980 .row {
+	max-width: 1980px;
 }
 
 /* Hero */
