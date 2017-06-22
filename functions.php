@@ -2,6 +2,7 @@
 
 // Global version tracker.
 
+include_once( 'includes/wsu-clean-tech-cards-shortcode.php' ); // Include shortcode plugin.
 include_once( 'includes/wsu-cleantech-home.php' ); // Include shortcode plugin.
 include_once( 'includes/wsu-cleantech-sidethumb.php' ); // Include shortcode plugin.
 
