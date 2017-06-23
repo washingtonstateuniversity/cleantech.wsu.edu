@@ -17,7 +17,6 @@
 /* Hero */
 .hero {
 	font-size: 1rem;
-	height: 100vh;
 	margin: 0;
 	overflow: hidden;
 	position: relative;
@@ -30,7 +29,7 @@
 }
 
 .hero section {
-	height: 100vh;
+	height: 95vh;
 }
 
 .fluid .hero .row .column {
@@ -45,9 +44,12 @@
 	flex-direction: column;
 	justify-content: center;
 	margin: 0 auto;
-	max-width: 1400px;
 	text-align: center;
 	z-index: 1;
+}
+
+.hero .hero--text img {
+	width: 50%;
 }
 
 .hero .hero--feature-image {
@@ -83,7 +85,7 @@
 }
 
 .content-card:before {
-	left: 8em;
+	left: 6em;
 }
 
 .content-card:nth-of-type(even):before {
@@ -127,7 +129,7 @@ article:nth-of-type(odd) .content-card--feature-image {
 }
 
 .deck .content-card--text {
-	padding: 12em 8em;
+	padding: 12em 6em;
 }
 
 @media screen and ( max-width: 989px ) {

@@ -16,6 +16,70 @@ Version: 1.8.0
 	max-width: 792px;
 }
 
+body {
+	font-size: 16px;
+}
+
+.hero .hero--text h1 {
+	color: #fff;
+	font-size: 1.2rem;
+	font-weight: 400;
+	padding-top: 2rem;
+	text-transform: uppercase;
+}
+
+main h2 {
+	font-family: "Open Sans Pro", sans-serif;
+	font-weight: 300;
+}
+
+main h3,
+main h4 {
+	font-size: 1rem;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+main h4 {
+	text-transform: none;
+}
+
+main p,
+main li {
+	font-size: .9rem;
+}
+
+.content-card--text p:first-of-type {
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 1.65;
+}
+
+.content-card--text li {
+	margin-top: .75rem;
+	padding-bottom: 0;
+}
+
+.content-card header {
+	padding-bottom: 4rem;
+	position: relative;
+}
+
+.content-card header:after {
+	background: rgba(0, 0, 0, .1);
+	content: "";
+	height: 1px;
+	position: absolute;
+	bottom: 1.5rem;
+	width: 66%;
+}
+
+.header-action {
+	color: #03aa14;
+	display: block;
+	font-size: 1rem;
+	text-transform: uppercase;
+}
 
 .home #jacket {
 	border-top: none;
@@ -36,7 +100,6 @@ Version: 1.8.0
 /* Hero */
 .hero {
 	font-size: 1rem;
-	height: 100vh;
 	margin: 0;
 	overflow: hidden;
 	position: relative;
@@ -49,7 +112,7 @@ Version: 1.8.0
 }
 
 .hero section {
-	height: 100vh;
+	height: 95vh;
 }
 
 .fluid .hero .row .column {
@@ -73,9 +136,12 @@ Version: 1.8.0
 	    -ms-flex-pack: center;
 	        justify-content: center;
 	margin: 0 auto;
-	max-width: 1400px;
 	text-align: center;
 	z-index: 1;
+}
+
+.hero .hero--text img {
+	width: 50%;
 }
 
 .hero .hero--feature-image {
@@ -111,7 +177,7 @@ Version: 1.8.0
 }
 
 .content-card:before {
-	left: 8em;
+	left: 6em;
 }
 
 .content-card:nth-of-type(even):before {
@@ -157,7 +223,7 @@ article:nth-of-type(odd) .content-card--feature-image {
 }
 
 .deck .content-card--text {
-	padding: 12em 8em;
+	padding: 12em 6em;
 }
 
 @media screen and ( max-width: 989px ) {
