@@ -85,7 +85,7 @@
 }
 
 .content-card:before {
-	left: 6em;
+	left: 8%;
 }
 
 .content-card:nth-of-type(even):before {
@@ -129,13 +129,28 @@ article:nth-of-type(odd) .content-card--feature-image {
 }
 
 .deck .content-card--text {
-	padding: 12em 6em;
+	padding: 12em 8%;
 }
 
 @media screen and ( max-width: 989px ) {
 
+	.home .page {
+		border-left: none;
+	}
+
+	.hero section {
+		height: 85vh;
+	}
+
+	.hero .hero--text img {
+		width: 90%;
+	}
+
 	.content-card:before {
-		left: 4em;
+		background-position: top;
+		left: 8%;
+		margin-top: 1rem;
+		width: 5rem;
 	}
 
 	.content-card:nth-of-type(even):before {
@@ -145,6 +160,10 @@ article:nth-of-type(odd) .content-card--feature-image {
 	.content-card--feature-image,
 	.content-card--text {
 		width: 100%;
+	}
+
+	.deck .content-card--text {
+		padding: 3em 8%;
 	}
 
 	.content-card--feature-image-wrapper {
