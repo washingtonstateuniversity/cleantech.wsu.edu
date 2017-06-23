@@ -1,64 +1,64 @@
 body {
-  font-size: 16px;
+	font-size: 16px;
 }
 
 .hero .hero--text h1 {
-  color: #fff;
-  font-size: 1.2rem;
-  font-weight: 400;
-  padding-top: 2rem;
-  text-transform: uppercase;
+	color: #fff;
+	font-size: 1.2rem;
+	font-weight: 400;
+	padding-top: 2rem;
+	text-transform: uppercase;
 }
 
 main h2 {
-  font-family: "Open Sans Pro", sans-serif;
-  font-weight: 300;
+	font-family: "Open Sans Pro", sans-serif;
+	font-weight: 300;
 }
 
 main h3,
 main h4 {
-  font-size: 1rem;
-  font-weight: 700;
-  text-transform: uppercase;
+	font-size: 1rem;
+	font-weight: 700;
+	text-transform: uppercase;
 }
 
 main h4 {
-  text-transform: none;
+	text-transform: none;
 }
 
 main p,
 main li {
-  font-size: .9rem;
+	font-size: .9rem;
 }
 
 .content-card--text p:first-of-type {
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.65;
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 1.65;
 }
 
 .content-card--text li {
-  margin-top: .75rem;
-  padding-bottom: 0;
+	margin-top: .75rem;
+	padding-bottom: 0;
 }
 
 .content-card header {
-  padding-bottom: 4rem;
-  position: relative;
+	padding-bottom: 4rem;
+	position: relative;
 }
 
 .content-card header:after {
-  background: rgba(0, 0, 0, .1);
-  content: "";
-  height: 1px;
-  position: absolute;
-  bottom: 1.5rem;
-  width: 66%;
+	background: rgba(0, 0, 0, .1);
+	content: "";
+	height: 1px;
+	position: absolute;
+	bottom: 1.5rem;
+	width: 66%;
 }
 
 .header-action {
-  color: #03aa14;
-  display: block;
-  font-size: 1rem;
-  text-transform: uppercase;
+	color: #03aa14;
+	display: block;
+	font-size: 1rem;
+	text-transform: uppercase;
 }
