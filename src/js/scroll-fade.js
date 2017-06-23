@@ -9,7 +9,13 @@
 				window_height = $( window ).height();
 
 			if ( 0 < container.bottom && 0 > container.top ) {
-				$element.css( "opacity", element.bottom / window_height );
+				if ( $element.height() < window_height ) {
+					var difference = window_height - $element.height();
+
+					$element.css( "opacity", ( element.bottom + difference ) / window_height );
+				} else {
+					$element.css( "opacity", element.bottom / window_height );
+				}
 			}
 		} );
 	}
