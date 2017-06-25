@@ -17,7 +17,7 @@ main h2 {
 
 main h3,
 main h4 {
-	font-size: 1rem;
+	font-size: .9rem;
 	font-weight: 700;
 	text-transform: uppercase;
 }
@@ -29,6 +29,12 @@ main h4 {
 main p,
 main li {
 	font-size: .9rem;
+}
+
+main a {
+	border-bottom: 1px solid #fa5735;
+	color: inherit;
+	transition: color .3s ease;
 }
 
 .content-card--text p:first-of-type {
