@@ -5,7 +5,7 @@ Author: WSU University Communications
 Author URI: http://web.wsu.edu, http://ucomm.wsu.edu
 Description: The child theme for cleantech.wsu.edu.
 Template: spine
-Version: 1.9.0
+Version: 1.9.1
 */
 
 #jacket:before {
@@ -32,24 +32,22 @@ body {
 }
 
 main h2 {
-	font-family: "Open Sans Pro", sans-serif;
+	font-family: "Open Sans", sans-serif;
+	font-size: 2rem;
 	font-weight: 300;
 }
 
 main h3,
 main h4 {
-	font-size: .9rem;
-	font-weight: 700;
-	text-transform: uppercase;
-}
-
-main h4 {
-	text-transform: none;
+	font-size: 1.1rem;
+	font-weight: 400;
+	margin: 1rem 0 .5rem;
 }
 
 main p,
 main li {
-	font-size: .9rem;
+	font-size: 1rem;
+	font-weight: 300;
 }
 
 main a {
@@ -58,10 +56,8 @@ main a {
 	transition: color .3s ease;
 }
 
-.content-card--text p:first-of-type {
-	font-size: 1rem;
-	font-weight: 400;
-	line-height: 1.65;
+main a:hover {
+	color: #fa5735;
 }
 
 .content-card--text li {
@@ -86,16 +82,13 @@ main a {
 .header-action {
 	color: #03aa14;
 	display: block;
-	font-size: 1rem;
+	font-size: 1.1rem;
+	letter-spacing: 1px;
 	text-transform: uppercase;
 }
 
 .home #jacket:before {
 	content: none;
-}
-
-.home main {
-	background: #fff;
 }
 
 .home .page {
@@ -163,6 +156,7 @@ main a {
 
 /* Card adjustments */
 .row .deck {
+	background-color: #fff;
 	float: none;
 	margin: 0 auto;
 	max-width: 1400px;

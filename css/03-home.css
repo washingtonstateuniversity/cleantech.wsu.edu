@@ -2,10 +2,6 @@
 	content: none;
 }
 
-.home main {
-	background: #fff;
-}
-
 .home .page {
 	border-left: 5px solid #f9f9f9;
 }
@@ -62,6 +58,7 @@
 
 /* Card adjustments */
 .row .deck {
+	background-color: #fff;
 	float: none;
 	margin: 0 auto;
 	max-width: 1400px;
