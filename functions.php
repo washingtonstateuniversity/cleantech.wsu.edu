@@ -11,7 +11,7 @@ add_filter( 'spine_child_theme_version', 'wsu_cleantech_theme_version' );
  * @since 1.8.0
  */
 function wsu_cleantech_theme_version() {
-	return '1.8.0';
+	return '1.9.1';
 }
 
 add_action( 'wp_enqueue_scripts', 'cleantech_enqueue_scripts' );
