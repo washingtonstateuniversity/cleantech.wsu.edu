@@ -48,6 +48,8 @@ class WSU_Cleantech_Cards_Shortcode {
 		while ( $query->have_posts() ) {
 			$query->the_post();
 			$featured_image_src = spine_get_thumbnail_image_src( 'full' );
+			$image_id = get_post_thumbnail_id( get_the_ID() );
+			$image_alt = get_post_meta( $image_id, '_wp_attachment_image_alt', true );
 			?>
 			<article class="content-card">
 
@@ -55,7 +57,7 @@ class WSU_Cleantech_Cards_Shortcode {
 						data-desktop-image="<?php echo esc_url( spine_get_featured_image_src( 'full' ) ); ?>"
 						data-mobile-image="<?php echo esc_url( $featured_image_src ); ?>">
 					<div class="content-card--feature-image-wrapper">
-						<img src="<?php echo esc_url( $featured_image_src ); ?>" alt="<?php the_title(); ?>" />
+						<img src="<?php echo esc_url( $featured_image_src ); ?>" alt="<?php echo esc_attr( $image_alt ) ?>" />
 					</div>
 				</figure>
 
